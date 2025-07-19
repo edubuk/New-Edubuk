@@ -8,37 +8,39 @@ import logo5 from "../assets/Logos/logo5.png";
 import logo6 from "../assets/Logos/logo6.png";
 import logo from "../assets/edubuklogo.png";
 const products = [
-  { name: "CETA", icon: logo1 },
-  { name: "MIIT Screening", icon: logo2 },
-  { name: "CETA Olympiad", icon: logo3 },
   { name: "TruCV", icon: logo4 },
   { name: "eSeal", icon: logo5 },
+  { name: "CETA", icon: logo1 },
   { name: "EBUK Token", icon: logo6 },
+  { name: "CETA Olympiad", icon: logo3 },
+  { name: "MIIT Screening", icon: logo2 },
 ];
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#010922] text-white min-h-screen px-6 md:px-16 pt-16 relative overflow-hidden">
+    <section className="bg-gradient-to-tr to-[#031A2F] from-[#010922] text-white min-h-screen px-6 md:px-16 pt-16 relative overflow-hidden">
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Left Text Content */}
         <div className="max-w-xl space-y-2">
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-balance">
-            Empowering Trust
-            <br /> in the Digital World
-          </h1>
-          <p className="text-muted-foreground text-lg">
-            Edubuk unites cutting-edge blockchain with real-world credentials
-            across 6 innovative products.
-          </p>
-          <div className="flex gap-4">
-            <button className="bg-cyan-400 text-[#010922] font-semibold px-6 py-3 rounded-md hover:bg-cyan-300 transition">
-              Get Started →
-            </button>
-            <button className="bg-[#030c2c] border border-white/10 text-white font-semibold px-6 py-3 rounded-md hover:bg-[#081541] transition">
-              Explore Our Products
-            </button>
-          </div>
-        </div>
+  <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-balance">
+    Empowering Trust
+    <br /> in the Digital World
+  </h1>
+  <p className="text-muted-foreground text-lg">
+    Edubuk unites cutting-edge blockchain with real-world credentials across 6 transformative products — from skill verification with eSeal, career-building with TruCV, to AI-powered Olympiads and tokenized rewards with EBUK.
+    <br className="hidden md:block" />
+    Together, we’re reshaping education, employment, and credentialing for the next generation.
+  </p>
+  <div className="flex gap-4">
+    <button className="bg-cyan-400 text-[#010922] font-semibold px-6 py-3 rounded-md hover:bg-cyan-300 transition">
+      Get Started →
+    </button>
+    <button className="bg-[#030c2c] border border-white/10 text-white font-semibold px-6 py-3 rounded-md hover:bg-[#081541] transition">
+      Explore Our Products
+    </button>
+  </div>
+</div>
+
 
         {/* Product Grid Container larger screen */}
         <div className="relative mt-10 md:mt-0 md:ml-20 w-full md:w-auto hide-horizontal-design">

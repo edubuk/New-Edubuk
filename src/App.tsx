@@ -4,6 +4,10 @@ import { Header } from "./pages/Header";
 import WhyTruCVSection from "./pages/Trucv";
 import WhyCETASection from "./pages/CETA";
 import MIITScreeningSection from "./pages/MIIT";
+import Olympiad from "./pages/Olympiad";
+import ESealSection from "./pages/Eseal";
+import WhyEbukTokenSection from "./pages/Token";
+import Footer from "./pages/Footer";
 
 
 function App() {
@@ -21,12 +25,14 @@ function App() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        {/* <HeroSectionMobile /> */}
         <WhyTruCVSection />
+        <ESealSection />
         <WhyCETASection />
+        <WhyEbukTokenSection />
+        <Olympiad />
         <MIITScreeningSection />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -9,7 +9,7 @@ import {
   FileCheck2,
   SearchCheck,
 } from 'lucide-react';
-
+import { Button } from '@/components/ui/button';
 export default function WhyTruCVSection() {
 
   
@@ -52,7 +52,7 @@ const reasons = [
 ];
   return (
     <>
-    <section className="bg-[#010922] text-white px-6 md:px-20 pt-6 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-[#031A2F] to-[#010922] text-white px-6 md:px-20 pt-6 relative overflow-hidden">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
         <div>
@@ -111,6 +111,11 @@ const reasons = [
             <p className="text-white/70 text-sm">{item.desc}</p>
           </div>
         ))}
+      </div>
+      <div className="mt-12 text-center">
+        <Button className="bg-cyan-300 text-[#031A2F] hover:bg-cyan-300 transition-all rounded-full px-6 py-4 text-xl font-semibold shadow-lg">
+          Learn More →
+        </Button>
       </div>
     </section>
     </>
